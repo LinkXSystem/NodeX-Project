@@ -1,0 +1,97 @@
+.tool-container {
+    position: fixed;
+    top: 2em;
+    left: 3em;
+}
+
+.circular {
+    background-color: #e5eecc !important;
+    position: absolute;
+    top: -8px;
+    width: 50px;
+    height: 50px;
+    transition: background-color .28s ease-in .2s !important;
+}
+
+.circular:hover {
+    background-color: rgba(159, 195, 255, 0.2) !important;
+}
+
+.button-group {
+    /*border: 1px #dededf solid;*/
+    background: linear-gradient(to right, #eaeaea, #fefefe);
+    border-radius: .28571429rem;
+    position: relative;
+    overflow: hidden;
+    left: 55px;
+    opacity: 0;
+    width: 0px;
+    height: 36px;
+    transition: width .5s, height .5s !important;
+    transition: opacity .1s ease-in 1s;
+}
+
+.button-group button {
+    width: 75px !important;
+}
+
+.chat-container {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+}
+
+.message-container {
+    border-left: 4px #8fe1e1 solid;
+    position: fixed;
+    top: 0em;
+    right: -421px;
+    width: 425px;
+    height: 100%;
+    /*滚动设置*/
+    overflow-y: scroll;
+    background-color: #fafafa;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    transition: right .5s, height .5s !important;
+}
+
+.message-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122, 153, 217)),
+    color-stop(0.72, rgb(73, 125, 189)),
+    color-stop(0.86, rgb(28, 58, 148)));
+}
+
+.message {
+    border-radius: .28571429rem;
+    display: inline-block !important;
+    background: #F8F8F9;
+    padding: 0.5em 1em;
+    border: 1px #dededf solid;
+    margin-top: 0.25em;
+}
+
+.message-left {
+    float: left;
+    clear: both;
+}
+
+.message-right {
+    float: right;
+    clear: both;
+}
+

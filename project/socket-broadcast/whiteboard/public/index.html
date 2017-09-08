@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Socket.IO whiteboard</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/semantic-ui/2.2.10/semantic.min.js"></script>-->
+</head>
+<body>
+
+<canvas id="whiteboard"></canvas>
+
+<div class="tool-container">
+    <button class="circular ui icon button">
+        <i class="icon settings"></i>
+    </button>
+    <div class="button-group ui buttons" style="display: inline-block;">
+        <button class="ui color black basic button">black</button>
+        <button class="ui color red  basic button">red</button>
+        <button class="ui color blue basic button">blue</button>
+        <button class="ui color green basic button">green</button>
+        <button class="ui grey basic button" id="clean">clean</button>
+    </div>
+</div>
+
+<div class="message-container">
+
+</div>
+
+<div class="chat-container">
+    <div class="ui right labeled left icon input">
+        <i class="comments outline icon"></i>
+        <input type="text" placeholder="Chat..." style="padding: 0.6em 1em; width: 275px" id="message">
+        <a class="ui tag label controller-cores" style="background-color: #31d6b2;">
+            core
+        </a>
+    </div>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/drag.js"></script>
+<script src="/js/animate.js"></script>
+<script src="/js/message.js"></script>
+</body>
+</html>
