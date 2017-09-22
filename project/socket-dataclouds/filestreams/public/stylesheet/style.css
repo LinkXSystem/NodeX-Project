@@ -1,0 +1,117 @@
+.container {
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 4px 0.5em 1px 0.5em;
+    transform: translate(-50%, -50%);
+}
+
+/*.ui.input {*/
+    /*position: absolute !important;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%);*/
+    /*width: 300px !important;*/
+/*}*/
+
+.name {
+    border-right: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 5px 0.5em 4px 0.5em;
+    position: relative;
+    display: inline-block;
+    width: 15em;
+    position: relative;
+    /*top: -0.5em;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*.name span {*/
+    /*!*display: inline-block;*!*/
+    /*position: relative;*/
+    /*top: -0.4em;*/
+    /*width: 10em;*/
+    /*!*height: 38px;*!*/
+    /*font-size: 1em;*/
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+    /*padding: 0em 1em 1em 1em;*/
+    /*box-sizing: border-box;*/
+    /*text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+/*}*/
+
+.name input[type="text"] {
+    font-size: 15px;
+    user-select: none;
+    border: 0em;
+    width: 12em;
+    background: white;
+    /*height: 1.25em;*/
+    padding: 0em 0.5em;
+    position: relative;
+    top: -0.4em;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+/*.name input[type="text"]:hover {*/
+    /*border: 0em;*/
+/*}*/
+
+/*.name input[type="text"]:checked {*/
+    /*border: 0em;*/
+/*}*/
+
+.upload {
+    width: 3em;
+    position: relative;
+    display: inline-block;
+    /*background: #D0EEFF;*/
+    border-left: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 0.5em;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    text-align: center;
+}
+
+.upload input[type='file'] {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width: 3em;
+}
+
+.upload:hover {
+    /*background: #AADFFD;*/
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        /*padding: 4px 0.5em 1px 0.5em;*/
+        box-sizing: border-box;
+        width: 345px;
+        margin: auto;
+        /*left: 0em;*/
+        /*transform: translate(0em, 0em);*/
+    }
+
+    /*.name {*/
+        /*width: 10em;*/
+    /*}*/
+
+    /*.name input[type="text"] {*/
+        /*width: 5em;*/
+    /*}*/
+}
